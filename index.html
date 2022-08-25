@@ -59,8 +59,52 @@
     <section id="section" class="minha_section container">
         <h1 class="meu_h1 p-1"><i class="fa-solid fa-file-pen"></i> ANOTAÇÕES</h1>
         <div class="div_txt text-center">
-            <h3 class="meu_h3">Titulo</h3>
-            <textarea class="minha_textarea" id="${id}">Conteudo</textarea>
+            <h3 class="meu_h3">Acesso remoto</h3>
+            <textarea class="minha_textarea" id="${id}">Poderia nos encaminhar sua ID de acesso (Sistema -> Acesso Remoto), para verificarmos o problema. Lembrando que, para acessarmos sua máquina, o acesso remoto deve estar aberto.</textarea>
+            <button onclick="copiar('${id}')">Copiar</button>
+            <nav id="nav_resposta">
+                <br>
+                <button type="button" data-toggle="modal" data-target="#modal_editar_respostaid">Editar</button>
+                <button data-toggle="modal" data-target="#modal_excluir_respostaid">Excluir</button>
+            </nav>
+        </div>
+
+        <div class="div_txt text-center">
+            <h3 class="meu_h3">Acesso Remoto Fechado</h3>
+            <textarea class="minha_textarea" id="${id}">Tentamos realizar o acesso remoto através da ID informada, mas o mesmo se encontra indisponível para acesso. Verifique se o acesso permanece aberto, se a sua id está correta ou se a sua conexão está ok, em seguida responda o chamado com a id.</textarea>
+            <button onclick="copiar('${id}')">Copiar</button>
+            <nav id="nav_resposta">
+                <br>
+                <button type="button" data-toggle="modal" data-target="#modal_editar_respostaid">Editar</button>
+                <button data-toggle="modal" data-target="#modal_excluir_respostaid">Excluir</button>
+            </nav>
+        </div>
+
+        <div class="div_txt text-center">
+            <h3 class="meu_h3">Balanço de Estoque</h3>
+            <textarea class="minha_textarea" id="${id}">Gerado arquivo conforme solicitado. Para visualizar basta ir em Relatórios -> Produtos -> Balanço de Estoque -> Informar os filtros que deseja e a data referente ao balanço de estoque conforme solicitado.</textarea>
+            <button onclick="copiar('${id}')">Copiar</button>
+            <nav id="nav_resposta">
+                <br>
+                <button type="button" data-toggle="modal" data-target="#modal_editar_respostaid">Editar</button>
+                <button data-toggle="modal" data-target="#modal_excluir_respostaid">Excluir</button>
+            </nav>
+        </div>
+
+        <div class="div_txt text-center">
+            <h3 class="meu_h3">SPED Gerado</h3>
+            <textarea class="minha_textarea" id="${id}">Gerado arquivo SPED conforme solicitado. Arquivo deixado na área de trabalho.</textarea>
+            <button onclick="copiar('${id}')">Copiar</button>
+            <nav id="nav_resposta">
+                <br>
+                <button type="button" data-toggle="modal" data-target="#modal_editar_respostaid">Editar</button>
+                <button data-toggle="modal" data-target="#modal_excluir_respostaid">Excluir</button>
+            </nav>
+        </div>
+
+        <div class="div_txt text-center">
+            <h3 class="meu_h3">Importar Sefaz</h3>
+            <textarea class="minha_textarea" id="${id}">#Para realizar a importação da nota basta clicar sobre a mensagem -> e clicar em "IMPORTAR XML/ BACKUP", o sistema irá realizar a importação do xml para o emissor nfe.</textarea>
             <button onclick="copiar('${id}')">Copiar</button>
             <nav id="nav_resposta">
                 <br>
